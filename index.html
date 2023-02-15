@@ -84,6 +84,34 @@ margin-top: 50px;
 width:100%;
 height: 100%;
 }
+
+/* quick-list style */
+
+.quick-image{
+    width: 342px;
+    height: 342px;
+}
+.quick-image img{
+    width: 100%;
+    height: 100%;
+}
+.quick-list{
+    margin:0 auto;
+    display: flex;
+    justify-content: span-between;
+    gap:50px;
+}
+.quick-images{
+    width:710px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
+
+.quick-list-info{
+    width:537px;
+}
+.quick-li
   @media (max-width:576px){
   nav{
     flex-direction: column;
@@ -136,7 +164,33 @@ height: 100%;
             <img src="./images/Rectangle 12.png" alt="">
         </div>
     </section>
-     
+
+    <!-- quick-list section -->
+
+     <section class="quick-list">
+        <div class="quick-images">
+            <div class="quick-image one">
+                <img src="./images/01.jpg" alt="">
+            </div>
+            <div class="quick-image two">
+               <img src="./images/02.png" alt="">
+            </div>
+            <div class="quick-image three">
+               <img src="./images/03.png" alt="">
+            </div>
+            <div class="quick-image four">
+               <img src="./images/04.png" alt="">
+            </div>
+        </div>
+        <div class="quick-list-info">
+            <h2 class="quick-list-title-one">Quick list <span class="quick-list-title-two">of Our </span></h2>
+            <h2 lass="quick-list-title-three">Features</h2>
+            <p class="quick-list-para">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
+            </p>
+            <button class="btn-primary">Explore more</button>
+        </div>
+     </section>
     </main>
     <footer>
 
