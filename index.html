@@ -18,9 +18,10 @@
  nav{
     display: flex;
     justify-content: space-between;
-    flex
-    align-items: center;
-    align-items: center;
+
+    
+   
+  
  }
 main{
     display:flex;
@@ -30,6 +31,8 @@ main{
   ul {
     display: flex;
     gap:50px;
+    align-items: center;
+   
   }
   ul li{
     list-style-type: none;
@@ -135,8 +138,67 @@ height: 100%;
     color:#727272;
 
 }
-.quick-li
-  @media (max-width:576px){
+
+/* ---------------------------card section style-------------------------
+   ----------------------------------------------------------------------
+*/
+.card{
+    display: flex;
+    gap:50px;
+    margin:0 auto;
+    align-items: center;
+}
+.card-features{
+    width:591px ;
+}
+
+.content-one-title{
+    font-weight: 700;
+    font-size: 2.81em;
+    color:#131313;
+}
+
+.card-para{
+    font-weight: 400;
+    font-size: 1em;
+    color:#727272;
+
+}
+
+.card-title-two{
+font-weight: 600;
+font-size: 20px;
+color:#131313;
+
+
+}
+
+
+/*------------------------- setting background image --------------------*/
+.card-image{
+background-image: url("./images/Rectangle-4.png");
+background-repeat: no-repeat;
+background-position: right top;
+background-size: 80% 100% ;
+width:708px;
+background-size: cover;
+height:74em;
+
+
+}
+
+/* ------------------------styling card---------------------- */
+.card-design{
+   
+  padding: 10px;
+  box-shadow: 5px 10px #f6f4f4e4;
+border-radius:5px;
+margin-bottom: 24px;
+
+}
+
+@media (max-width:700px){
+    
   nav{
     flex-direction: column;
     text-align: center;
@@ -145,6 +207,8 @@ height: 100%;
     flex-direction: column;
     text-align: center;
   }
+@media (min-width:700px) and (max-width:1200px){
+ 
 }
 </style>
 <body>
@@ -215,6 +279,80 @@ height: 100%;
             <button class="btn-primary">Explore more</button>
         </div>
      </section>
+      
+<!--------------- card section --------------->
+
+     <section class="card">
+        <div class="card-features">
+            <article class="content-one">
+                <h2 class="content-one-title">Features you will love & enjoy</h2>
+                <p class="card-para">
+                    
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even                   
+                </p>
+                
+                
+            </article>
+            <article class="card-content-two">
+                <div class="card-one card-design">
+                <h4 class="card-title-two">Dexktop & Mobile Version</h4>
+                   <p class="card-para">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
+                    </p>
+
+                </div>
+                <div class="card-two card-design">
+                    <h4 class="card-title-two">
+                        Drag & Drop Builder
+                        </h4>
+                        <p class="card-para">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
+                    </p>
+                </div>
+
+                <div class="card-three card-design">
+                    <h4 class="card-title-two">
+                        Drag & Drop Builder
+                        </h4>
+                        <p class="card-para">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
+                    </p>
+                </div>
+                <div class="card-four card-design">
+                    <h4 class="card-title-two">
+                        Awesome Modern Design
+                        </h4>
+                        <p class="card-para">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
+                    </p>
+                </div>
+                <div class="card-five card-design">
+                    <h4 class="card-title-two">
+                        Super Easy to Edit
+                        </h4>
+                        <p class="card-para">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
+                    </p>
+                </div>
+                
+            </article>
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        <div class="card-image">
+            
+            
+            
+        </div>
+        
+        
+    </section>
     </main>
     <footer>
 
