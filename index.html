@@ -14,360 +14,411 @@
     <title>Document</title>
   </head>
   <style>
-         *{
-            box-sizing:border-box;
-        }
-        img{
-            height: 100%;
-            width: 100%;
-        }
-        body{
-            font-family: 'work-sans',sans-serif;
-        }
-     nav{
-        display: flex;
-        justify-content: space-between;
+           *{
+              box-sizing:border-box;
+          }
+          img{
+              height: 100%;
+              width: 100%;
+          }
+          body{
+              font-family: 'work-sans',sans-serif;
+          }
+       nav{
+          display: flex;
+          justify-content: space-between;
 
 
 
 
-     }
-    main{
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-      ul {
-        display: flex;
-        gap:50px;
-        align-items: center;
-
+       }
+      main{
+          display:flex;
+          justify-content: center;
+          flex-direction: column;
       }
-      ul li{
-        list-style-type: none;
-      }
-      ul li a{
-        text-decoration: none;
-      }
-
-    /* banner styling */
-
-    .banner-title{
-        font-weight: 700;
-        font-size: 64px;
-        color: #131313;
-        text-align:center;
-        line-height: 30px;
-
-
-    }
-    .banner-para{
-        font-weight: 400;
-        font-size: 16px;
-        color:#727272;
-        text-align: center;
-    }
-    .second{
-     text-align: center;
-
-    }
-    .banner-btn{
-        display: flex;
-        justify-content: center;
-    }
-    .btn-primary{
-        height: 64px;
-        text-align: center;
-        color:#fff;
-        background: #ff900e;
-        font-weight: 600;
-        font-size: 20px;
-        padding: 21px 25px;
-        border:0;
-        outline: none;
-        border-radius: 8px;
-    }
-    .banner-image>div{
-    width:1100px;
-    margin: 0 auto;
-    margin-top: 50px;
-    }
-    .banner-image>div img{
-    width:100%;
-    height: 100%;
-    }
-
-    /* quick-list style */
-    .quick-list{
-        margin:0 auto;
-        display: flex;
-        justify-content: span-between;
-        gap:50px;
-        align-items: center;
-        margin-top: 75px;
-    }
-    .quick-image{
-        width: 342px;
-        height: 342px;
-    }
-    .quick-image img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .quick-images{
-        width:710px;
-        display:flex;
-        flex-wrap: wrap;
-        gap:24px;
-    }
-
-    .quick-list-info{
-        width:537px;
-    }
-    .quick-list-title-one{
-        color:#727272;
-        font-weight: 300;
-        font-size: 45px;
-    }
-    .quick-list-title-two{
-        color:#131313;
-        font-weight: 600;
-        font-size: 45px;
-    }
-    .quick-list-title-three{
-
-        font-weight: 500;
-        font-size: 45px;
-        color:#ff900e;
-        line-height: 1px;
-    }
-    .quick-list-para{
-        font-weight: 400;
-        font-size: 16px;
-        color:#727272;
-
-    }
-
-    /* ---------------------------card section style-------------------------
-       ----------------------------------------------------------------------
-    */
-    .card{
-        display: flex;
-        gap:50px;
-        margin:0 auto;
-        align-items: center;
-        margin-top: 112px;
-    }
-    .card-features{
-        width:591px ;
-    }
-
-    .content-one-title{
-        font-weight: 700;
-        font-size: 2.81em;
-        color:#131313;
-    }
-
-    .card-para{
-        font-weight: 400;
-        font-size: 1em;
-        color:#727272;
-
-    }
-
-    .card-title-two{
-    font-weight: 600;
-    font-size: 20px;
-    color:#131313;
-
-
-    }
-
-
-    /*------------------------- setting background image --------------------*/
-    .card-image{
-    background-image: url("./images/Rectangle-4.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 80% 100% ;
-    width:708px;
-    background-size: cover;
-    height:74em;
-
-
-    }
-    .card .btn-primary{
-
-         width:400px
-         paddding-top:0;
-         padding-bottom:120px;
-    }
-    .btn-text-special{
-        font-size: 65px;
-        font-weight: 700;
-        color:white;
-
-    }
-    /* card image button styling */
-
-    /* ------------------------styling card---------------------- */
-    .card-design{
-
-      padding: 10px;
-      box-shadow: 5px 10px #f6f4f4e4;
-    border-radius:5px;
-    margin-bottom: 24px;
-
-    }
-
-    /*------------- fact section styling------------ */
-
-    .facts{
-        width:1100px;
-        margin:0 auto;
-    }
-
-    .facts-title{
+      .logo-text{
         font-weight: 700;
         font-size: 45px;
         color:#131313;
-    }
-    .facts-para{
-        font-weight: 400;
-        font-size: 16px;
-        color:#727272;
-    }
-
-    /* project-status styling */
-    .project-status{
-        width: 1100px;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-    .project-info{
-        display: flex;
-        justify-content: space-between;
-    }
-    .content{
-        width: 241px;
-        height: 241px;
-        border: 1px solid #ff900e;
-        border-radius: 8px;
-
-    }
-    .content h4{
-        color:#424242;
-        text-align: center;
-        font-size: 45px;
-        font-weight: 600;
-        padding-top: 0;
-        margin-top: 10px;
-    }
-    .content h5{
-        color:#727272;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 600;
-        padding-top: 0;
-        margin-top: -50px;
-    }
-    .image-content{
-        height: 45px;
-        width: 45px;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-    .image-content img{
-        width: 100%;
-        height: 100%;
-    }
-
-    /* sponsor section styling */
-    .sponsor-content{
-        width: 542px;
-        
-        
-        margin: 0 auto;
-    }
-    .sponsor-content-title{
-       font-weight: 700;
-       font-size: 45px;
-       color:#131313;
-    }
-    .sponsor-content-para{
-       font-weight: 400;
-       font-size: 16px;
-       color:#727272;
-       line-height: 26px;
-       padding: 0;
-       margin-top: -45px;
-    }
-    #second-para{
-      text-align: center;
-      margin-top: -30px;
-     
-    }
-   .sponsor-logo-content{
-    display: flex;
-    justify-content: space-between;
-    width: 1100px;
-    margin: 0 auto;
-    margin-top: 30px;
-   }
-    .sponsor-image-content{
-        width: 165px;
-        height: 50px;
-    }
-    .sponsor-image-content img{
-        width: 100%;
-        height: 100%;
-    }
-    
-
-    @media (max-width:700px){
-
-      nav{
-        flex-direction: column;
-        text-align: center;
       }
-      ul{
-        flex-direction: column;
-        text-align: center;
+        ul {
+          display: flex;
+          gap:50px;
+          align-items: center;
+
+        }
+        ul li{
+          list-style-type: none;
+         
+        }
+        ul li a{
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 18px;
+          color:#424242;
+        }
+
+      /* banner styling */
+
+      .banner-title{
+          font-weight: 700;
+          font-size: 4em;
+          color: #131313;
+          text-align:center;
+          line-height: 30px;
+
+
       }
-      .quick-images{
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        
+      .banner-para{
+          font-weight: 400;
+          font-size: 16px;
+          color:#727272;
+          text-align: center;
       }
-      .card{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      .second{
+       text-align: center;
+
       }
+      .banner-btn{
+          display: flex;
+          justify-content: center;
+      }
+      .btn-primary{
+          height: 64px;
+          text-align: center;
+          color:#fff;
+          background: #ff900e;
+          font-weight: 600;
+          font-size: 20px;
+          padding: 21px 25px;
+          border:0;
+          outline: none;
+          border-radius: 8px;
+      }
+      .banner-image>div{
+      width:1100px;
+      margin: 0 auto;
+      margin-top: 50px;
+      }
+      .banner-image>div img{
+      width:100%;
+      height: 100%;
+      }
+
+      /* quick-list style */
       .quick-list{
-        flex-direction: column;
+          margin:0 auto;
+          display: flex;
+          justify-content: span-between;
+          gap:50px;
+          align-items: center;
+          margin-top: 75px;
+      }
+      .quick-image{
+          width: 342px;
+          height: 342px;
+      }
+      .quick-image img{
+          width: 100%;
+          height: 100%;
+      }
+
+      .quick-images{
+          width:710px;
+          display:flex;
+          flex-wrap: wrap;
+          gap:24px;
+      }
+
+      .quick-list-info{
+          width:537px;
+      }
+      .quick-list-title-one{
+          color:#727272;
+          font-weight: 300;
+          font-size: 45px;
+      }
+      .quick-list-title-two{
+          color:#131313;
+          font-weight: 600;
+          font-size: 45px;
+      }
+      .quick-list-title-three{
+
+          font-weight: 500;
+          font-size: 45px;
+          color:#ff900e;
+          line-height: 1px;
+      }
+      .quick-list-para{
+          font-weight: 400;
+          font-size: 16px;
+          color:#727272;
+
+      }
+
+      /* ---------------------------card section style-------------------------
+         ----------------------------------------------------------------------
+      */
+      .card{
+          display: flex;
+          gap:50px;
+          margin:0 auto;
+          align-items: center;
+          margin-top: 112px;
+      }
+      .card-features{
+          width:591px ;
+      }
+
+      .content-one-title{
+          font-weight: 700;
+          font-size: 2.81em;
+          color:#131313;
+      }
+
+      .card-para{
+          font-weight: 400;
+          font-size: 1em;
+          color:#727272;
+
+      }
+
+      .card-title-two{
+      font-weight: 600;
+      font-size: 20px;
+      color:#131313;
+
+
+      }
+
+
+      /*------------------------- setting background image --------------------*/
+      .card-image{
+      background-image: url("./images/Rectangle-4.png");
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 80% 100% ;
+      width:708px;
+      background-size: cover;
+      height:74em;
+
+
+      }
+      .card .btn-primary{
+
+           width:400px
+           paddding-top:0;
+           padding-bottom:120px;
+      }
+      .btn-text-special{
+          font-size: 65px;
+          font-weight: 700;
+          color:white;
+
+      }
+      /* card image button styling */
+
+      /* ------------------------styling card---------------------- */
+      .card-design{
+
+        padding: 10px;
+        box-shadow: 5px 10px #f6f4f4e4;
+      border-radius:5px;
+      margin-bottom: 24px;
+
+      }
+
+      /*------------- fact section styling------------ */
+
+      .facts{
+          width:1100px;
+          margin:0 auto;
+      }
+
+      .facts-title{
+          font-weight: 700;
+          font-size: 45px;
+          color:#131313;
+      }
+      .facts-para{
+          font-weight: 400;
+          font-size: 16px;
+          color:#727272;
+      }
+
+      /* project-status styling */
+      .project-status{
+          width: 1100px;
+          margin: 0 auto;
+          margin-top: 30px;
       }
       .project-info{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+          display: flex;
+          justify-content: space-between;
       }
-      .project-status{
-        width:576px;
-        margin: 0 auto;
-        margin-left:-40px;
+      .content{
+          width: 241px;
+          height: 241px;
+          border: 1px solid #ff900e;
+          border-radius: 8px;
+
+      }
+      .content h4{
+          color:#424242;
+          text-align: center;
+          font-size: 45px;
+          font-weight: 600;
+          padding-top: 0;
+          margin-top: 10px;
+      }
+      .content h5{
+          color:#727272;
+          text-align: center;
+          font-size: 20px;
+          font-weight: 600;
+          padding-top: 0;
+          margin-top: -50px;
+      }
+      .image-content{
+          height: 45px;
+          width: 45px;
+          margin: 0 auto;
+          margin-top: 30px;
+      }
+      .image-content img{
+          width: 100%;
+          height: 100%;
       }
 
-      
-      .contant-one{
-       margin-bottom: 20px;
-      }
-    @media (min-width:700px) and (max-width:1200px){
+      /* sponsor section styling */
+      .sponsor-content{
+          width: 542px;
 
+
+          margin: 0 auto;
+      }
+      .sponsor-content-title{
+         font-weight: 700;
+         font-size: 45px;
+         color:#131313;
+      }
+      .sponsor-content-para{
+         font-weight: 400;
+         font-size: 16px;
+         color:#727272;
+         line-height: 26px;
+         padding: 0;
+         margin-top: -45px;
+      }
+      #second-para{
+        text-align: center;
+        margin-top: -30px;
+
+      }
+     .sponsor-logo-content{
+      display: flex;
+      justify-content: space-between;
+      width: 1100px;
+      margin: 0 auto;
+      margin-top: 30px;
+     }
+      .sponsor-image-content{
+          width: 165px;
+          height: 50px;
+      }
+      .sponsor-image-content img{
+          width: 100%;
+          height: 100%;
+      }
+
+      /*-------------- footer styling-------- */
+      footer{
+          width: 1100px;
+          padding: 39px 410px;
+          background:#FFF4E7;
+          margin: 0 auto;
+          margin-top: 130px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+      }
+    .footer-content{
+      width: 820px;
+      font-weight: 400;
+      font-size: 20px;
+      color:#424242;
+
+
+      height: 100px;
+      margin-right: -150px;
+
+    }
+    .footer-content-para{
+      width: 820px;
+      font-weight: 400;
+      font-size: 20px;
+      color:#424242;
+
+
+      height: 100px;
+      margin-right: -150px;
+
+    }
+
+      @media (max-width:576px){
+
+        nav{
+          flex-direction: column;
+          text-align: center;
+        }
+        ul{
+          flex-direction: column;
+          text-align: center;
+        }
+        .quick-images{
+          flex-wrap: nowrap;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+
+        }
+        .card{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .quick-list{
+          flex-direction: column;
+        }
+        .project-info{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .project-status{
+          width:576px;
+          margin: 0 auto;
+          margin-left:-40px;
+        }
+
+
+        .contant-one{
+         margin-bottom: 20px;
+        }
+
+        .sponsor-logo-content{
+         flex-direction: column;
+         margin-left: 150px;
+        }
+        .footer-content-para{
+          margin-left: -400px;
+        }
     }
   </style>
   <body>
@@ -558,29 +609,38 @@
         <div class="sponsor-content">
           <h4 class="sponsor-content-title">Our Sponspors</h4>
           <p class="sponsor-content-para">
-            There are many variations of passages of Lorem Ipsum available, but</p><br><p class="sponsor-content-para" id="second-para"> the majority have suffered alteration.</p>
-           
-          
+            There are many variations of passages of Lorem Ipsum available, but
+          </p>
+          <br />
+          <p class="sponsor-content-para" id="second-para">
+            the majority have suffered alteration.
+          </p>
         </div>
         <div class="sponsor-logo-content">
-            <div class="sponsor-image-content">
-                <img src="./images/spotify Logo.png" alt="">
-                </div>
-            <div class="sponsor-image-content">
-                <img src="./images/Amazon Logo.png" alt="">
-                </div>
-            <div class="sponsor-image-content">
-                <img src="./images/google Logo.png" alt="">
-                </div>
-            <div class="sponsor-image-content">
-                <img src="./images/Telerama Logo.png" alt="">
-                </div>
-            <div class="sponsor-image-content">
-                <img src="./images/figma Logo.png" alt="">
-                </div>
+          <div class="sponsor-image-content">
+            <img src="./images/spotify Logo.png" alt="" />
+          </div>
+          <div class="sponsor-image-content">
+            <img src="./images/Amazon Logo.png" alt="" />
+          </div>
+          <div class="sponsor-image-content">
+            <img src="./images/google Logo.png" alt="" />
+          </div>
+          <div class="sponsor-image-content">
+            <img src="./images/Telerama Logo.png" alt="" />
+          </div>
+          <div class="sponsor-image-content">
+            <img src="./images/figma Logo.png" alt="" />
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <p class="footer-content-para">
+          All rights reserved copyright@2023 startup landing page design
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
