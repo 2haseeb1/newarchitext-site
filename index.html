@@ -1,496 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- google-font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Open+Sans&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
+  </head>
+  <style>
+         *{
+            box-sizing:border-box;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            font-family: 'work-sans',sans-serif;
+        }
+     nav{
+        display: flex;
+        justify-content: space-between;
 
-</head>
-<style>
-     *{
-        box-sizing:border-box;
+
+
+
+     }
+    main{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
     }
-    img{
-        height: 100%;
+      ul {
+        display: flex;
+        gap:50px;
+        align-items: center;
+
+      }
+      ul li{
+        list-style-type: none;
+      }
+      ul li a{
+        text-decoration: none;
+      }
+
+    /* banner styling */
+
+    .banner-title{
+        font-weight: 700;
+        font-size: 64px;
+        color: #131313;
+        text-align:center;
+        line-height: 30px;
+
+
+    }
+    .banner-para{
+        font-weight: 400;
+        font-size: 16px;
+        color:#727272;
+        text-align: center;
+    }
+    .second{
+     text-align: center;
+
+    }
+    .banner-btn{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-primary{
+        height: 64px;
+        text-align: center;
+        color:#fff;
+        background: #ff900e;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 21px 25px;
+        border:0;
+        outline: none;
+        border-radius: 8px;
+    }
+    .banner-image>div{
+    width:1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    }
+    .banner-image>div img{
+    width:100%;
+    height: 100%;
+    }
+
+    /* quick-list style */
+    .quick-list{
+        margin:0 auto;
+        display: flex;
+        justify-content: span-between;
+        gap:50px;
+        align-items: center;
+        margin-top: 75px;
+    }
+    .quick-image{
+        width: 342px;
+        height: 342px;
+    }
+    .quick-image img{
         width: 100%;
+        height: 100%;
     }
-    body{
-        font-family: 'work-sans',sans-serif;
+    
+    .quick-images{
+        width:710px;
+        display:flex;
+        flex-wrap: wrap;
+        gap:24px;
     }
- nav{
-    display: flex;
-    justify-content: space-between;
 
-   
-   
-  
- }
-main{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-}
-  ul {
-    display: flex;
-    gap:50px;
-    align-items: center;
-   
-  }
-  ul li{
-    list-style-type: none;
-  }
-  ul li a{
-    text-decoration: none;
-  }
+    .quick-list-info{
+        width:537px;
+    }
+    .quick-list-title-one{
+        color:#727272;
+        font-weight: 300;
+        font-size: 45px;
+    }
+    .quick-list-title-two{
+        color:#131313;
+        font-weight: 600;
+        font-size: 45px;
+    }
+    .quick-list-title-three{
 
-/* banner styling */
+        font-weight: 500;
+        font-size: 45px;
+        color:#ff900e;
+        line-height: 1px;
+    }
+    .quick-list-para{
+        font-weight: 400;
+        font-size: 16px;
+        color:#727272;
 
-.banner-title{
-    font-weight: 700;
-    font-size: 64px;
-    color: #131313;
-    text-align:center;
-    line-height: 30px;
+    }
 
+    /* ---------------------------card section style-------------------------
+       ----------------------------------------------------------------------
+    */
+    .card{
+        display: flex;
+        gap:50px;
+        margin:0 auto;
+        align-items: center;
+        margin-top: 112px;
+    }
+    .card-features{
+        width:591px ;
+    }
 
-}
-.banner-para{
-    font-weight: 400;
-    font-size: 16px;
-    color:#727272;
-    text-align: center;
-}
-.second{
- text-align: center;
- 
-}
-.banner-btn{
-    display: flex;
-    justify-content: center;
-}
-.btn-primary{
-    height: 64px;
-    text-align: center;
-    color:#fff;
-    background: #ff900e;
+    .content-one-title{
+        font-weight: 700;
+        font-size: 2.81em;
+        color:#131313;
+    }
+
+    .card-para{
+        font-weight: 400;
+        font-size: 1em;
+        color:#727272;
+
+    }
+
+    .card-title-two{
     font-weight: 600;
     font-size: 20px;
-    padding: 21px 25px;
-    border:0;
-    outline: none;
-    border-radius: 8px;
-}
-.banner-image>div{
-width:1100px;
-margin: 0 auto;
-margin-top: 50px;
-}
-.banner-image>div img{
-width:100%;
-height: 100%;
-}
+    color:#131313;
 
-/* quick-list style */
 
-.quick-image{
-    width: 342px;
-    height: 342px;
-}
-.quick-image img{
-    width: 100%;
-    height: 100%;
-}
-.quick-list{
-    margin:0 auto;
+    }
+
+
+    /*------------------------- setting background image --------------------*/
+    .card-image{
+    background-image: url("./images/Rectangle-4.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 80% 100% ;
+    width:708px;
+    background-size: cover;
+    height:74em;
+
+
+    }
+    .card .btn-primary{
+
+         width:400px
+         paddding-top:0;
+         padding-bottom:120px;
+    }
+    .btn-text-special{
+        font-size: 65px;
+        font-weight: 700;
+        color:white;
+
+    }
+    /* card image button styling */
+
+    /* ------------------------styling card---------------------- */
+    .card-design{
+
+      padding: 10px;
+      box-shadow: 5px 10px #f6f4f4e4;
+    border-radius:5px;
+    margin-bottom: 24px;
+
+    }
+
+    /*------------- fact section styling------------ */
+
+    .facts{
+        width:1100px;
+        margin:0 auto;
+    }
+
+    .facts-title{
+        font-weight: 700;
+        font-size: 45px;
+        color:#131313;
+    }
+    .facts-para{
+        font-weight: 400;
+        font-size: 16px;
+        color:#727272;
+    }
+
+    /* project-status styling */
+    .project-status{
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .project-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .content{
+        width: 241px;
+        height: 241px;
+        border: 1px solid #ff900e;
+        border-radius: 8px;
+
+    }
+    .content h4{
+        color:#424242;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 600;
+        padding-top: 0;
+        margin-top: 10px;
+    }
+    .content h5{
+        color:#727272;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 0;
+        margin-top: -50px;
+    }
+    .image-content{
+        height: 45px;
+        width: 45px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .image-content img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* sponsor section styling */
+    .sponsor-content{
+        width: 542px;
+        
+        
+        margin: 0 auto;
+    }
+    .sponsor-content-title{
+       font-weight: 700;
+       font-size: 45px;
+       color:#131313;
+    }
+    .sponsor-content-para{
+       font-weight: 400;
+       font-size: 16px;
+       color:#727272;
+       line-height: 26px;
+       padding: 0;
+       margin-top: -45px;
+    }
+    #second-para{
+      text-align: center;
+      margin-top: -30px;
+     
+    }
+   .sponsor-logo-content{
     display: flex;
-    justify-content: span-between;
-    gap:50px;
-    align-items: center;
-}
-.quick-images{
-    width:710px;
-    display:flex;
-    flex-wrap: wrap;
-    gap:24px;
-}
-
-.quick-list-info{
-    width:537px;
-}
-.quick-list-title-one{
-    color:#727272;
-    font-weight: 300;
-    font-size: 45px;
-}
-.quick-list-title-two{
-    color:#131313;
-    font-weight: 600;
-    font-size: 45px;
-}
-.quick-list-title-three{
-    
-    font-weight: 500;
-    font-size: 45px;
-    color:#ff900e;
-    line-height: 1px;
-}
-.quick-list-para{
-    font-weight: 400;
-    font-size: 16px;
-    color:#727272;
-
-}
-
-/* ---------------------------card section style-------------------------
-   ----------------------------------------------------------------------
-*/
-.card{
-    display: flex;
-    gap:50px;
-    margin:0 auto;
-    align-items: center;
-}
-.card-features{
-    width:591px ;
-}
-
-.content-one-title{
-    font-weight: 700;
-    font-size: 2.81em;
-    color:#131313;
-}
-
-.card-para{
-    font-weight: 400;
-    font-size: 1em;
-    color:#727272;
-
-}
-
-.card-title-two{
-font-weight: 600;
-font-size: 20px;
-color:#131313;
-
-
-}
-
-
-/*------------------------- setting background image --------------------*/
-.card-image{
-background-image: url("./images/Rectangle-4.png");
-background-repeat: no-repeat;
-background-position: right top;
-background-size: 80% 100% ;
-width:708px;
-background-size: cover;
-height:74em;
-
-
-}
-.card .btn-primary{
-    
-     width:400px
-     paddding-top:0;
-     padding-bottom:120px;
-}
-.btn-text-special{
-    font-size: 65px;
-    font-weight: 700;
-    color:white;
-    
-}
-/* card image button styling */
-
-/* ------------------------styling card---------------------- */
-.card-design{
-   
-  padding: 10px;
-  box-shadow: 5px 10px #f6f4f4e4;
-border-radius:5px;
-margin-bottom: 24px;
-
-}
-
-/*------------- fact section styling------------ */
-
-.facts{
-    width:1100px;
-    margin:0 auto;
-}
-
-.facts-title{
-    font-weight: 700;
-    font-size: 45px;
-    color:#131313;
-}
-.facts-para{
-    font-weight: 400;
-    font-size: 16px;
-    color:#727272;
-}
-
-/* project-status styling */
-.project-status{
+    justify-content: space-between;
     width: 1100px;
     margin: 0 auto;
-}
-.project-info{
-    display: flex;
-    justify-content: space-between;
-}
-.content{
-    width: 241px;
-    height: 241px;
-    border: 1px solid #ff900e;
-    border-radius: 8px;
-
-}
-.content h4{
-    color:#424242;
-    text-align: center;
-    font-size: 45px;
-    font-weight: 600;
-    padding-top: 0;
-    margin-top: 10px;
-}
-.content h5{
-    color:#727272;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    padding-top: 0;
-    margin-top: -50px;
-}
-.image-content{
-    height: 45px;
-    width: 45px;
-    margin: 0 auto;
     margin-top: 30px;
-}
-.image-content img{
-    width: 100%;
-    height: 100%;
-}
-@media (max-width:700px){
+   }
+    .sponsor-image-content{
+        width: 165px;
+        height: 50px;
+    }
+    .sponsor-image-content img{
+        width: 100%;
+        height: 100%;
+    }
     
-  nav{
-    flex-direction: column;
-    text-align: center;
-  }
-  ul{
-    flex-direction: column;
-    text-align: center;
-  }
-@media (min-width:700px) and (max-width:1200px){
- 
-}
-</style>
-<body>
-    <header>
-     <!-- navigation -->
-     <nav>
-       <div class="logo-text">
-        G3 architect
-       </div>
 
-       <div>
-        <ul>
+    @media (max-width:700px){
+
+      nav{
+        flex-direction: column;
+        text-align: center;
+      }
+      ul{
+        flex-direction: column;
+        text-align: center;
+      }
+    @media (min-width:700px) and (max-width:1200px){
+
+    }
+  </style>
+  <body>
+    <header>
+      <!-- navigation -->
+      <nav>
+        <div class="logo-text">G3 architect</div>
+
+        <div>
+          <ul>
             <li><a href="http://">Home</a></li>
             <li><a href="http://">About</a></li>
             <li><a href="http://">Contact us</a></li>
             <li><a href="http://">Login</a></li>
-        </ul>
-        
-       </div>
-     </nav>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- banner -->
-        <section class="banner">
-     <article class="banner-info">
-        <h2 class="banner-title">Brand New 
-           
-            </h2>
-            <h2 class="banner-title">Group of Architects </h2>
-            
-            <p class="banner-para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in</p>
-            <p class="banner-para second">some form, by injected humour, or randomised words which don't look even</p>
-            <div class="banner-btn">
+      <!-- banner -->
+      <section class="banner">
+        <article class="banner-info">
+          <h2 class="banner-title">Brand New</h2>
+          <h2 class="banner-title">Group of Architects</h2>
+
+          <p class="banner-para">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in
+          </p>
+          <p class="banner-para second">
+            some form, by injected humour, or randomised words which don't look
+            even
+          </p>
+          <div class="banner-btn">
             <button class="btn-primary">Explore More</button>
-            </div>
-           
-     </article>
-    </section>
-    <section class="banner-image">
+          </div>
+        </article>
+      </section>
+      <section class="banner-image">
         <div>
-            <img src="./images/Rectangle 12.png" alt="">
+          <img src="./images/Rectangle 12.png" alt="" />
         </div>
-    </section>
+      </section>
 
-    <!-- quick-list section -->
+      <!-- quick-list section -->
 
-     <section class="quick-list">
+      <section class="quick-list">
         <div class="quick-images">
-            <div class="quick-image one">
-                <img src="./images/01.jpg" alt="">
-            </div>
-            <div class="quick-image two">
-               <img src="./images/02.png" alt="">
-            </div>
-            <div class="quick-image three">
-               <img src="./images/03.png" alt="">
-            </div>
-            <div class="quick-image four">
-               <img src="./images/04.png" alt="">
-            </div>
+          <div class="quick-image one">
+            <img src="./images/01.jpg" alt="" />
+          </div>
+          <div class="quick-image two">
+            <img src="./images/02.png" alt="" />
+          </div>
+          <div class="quick-image three">
+            <img src="./images/03.png" alt="" />
+          </div>
+          <div class="quick-image four">
+            <img src="./images/04.png" alt="" />
+          </div>
         </div>
         <div class="quick-list-info">
-            <h2 class="quick-list-title-one">Quick list <span class="quick-list-title-two">of Our </span></h2>
-            <h2 class="quick-list-title-three">Features</h2>
-            <p class="quick-list-para">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
-            </p>
-            <button class="btn-primary">Explore more</button>
+          <h2 class="quick-list-title-one">
+            Quick list <span class="quick-list-title-two">of Our </span>
+          </h2>
+          <h2 class="quick-list-title-three">Features</h2>
+          <p class="quick-list-para">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even
+          </p>
+          <button class="btn-primary">Explore more</button>
         </div>
-     </section>
-      
-<!--------------- card section --------------->
+      </section>
 
-     <section class="card">
+      <!--------------- card section --------------->
+
+      <section class="card">
         <div class="card-features">
-            <article class="content-one">
-                <h2 class="content-one-title">Features you will love & enjoy</h2>
-                <p class="card-para">
-                    
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even                   
-                </p>
-                
-                
-            </article>
-            <article class="card-content-two">
-                <div class="card-one card-design">
-                <h4 class="card-title-two">Dexktop & Mobile Version</h4>
-                   <p class="card-para">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
-                    </p>
+          <article class="content-one">
+            <h2 class="content-one-title">Features you will love & enjoy</h2>
+            <p class="card-para">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+            </p>
+          </article>
+          <article class="card-content-two">
+            <div class="card-one card-design">
+              <h4 class="card-title-two">Dexktop & Mobile Version</h4>
+              <p class="card-para">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised...........
+              </p>
+            </div>
+            <div class="card-two card-design">
+              <h4 class="card-title-two">Drag & Drop Builder</h4>
+              <p class="card-para">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised...........
+              </p>
+            </div>
 
-                </div>
-                <div class="card-two card-design">
-                    <h4 class="card-title-two">
-                        Drag & Drop Builder
-                        </h4>
-                        <p class="card-para">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
-                    </p>
-                </div>
-
-                <div class="card-three card-design">
-                    <h4 class="card-title-two">
-                        Drag & Drop Builder
-                        </h4>
-                        <p class="card-para">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
-                    </p>
-                </div>
-                <div class="card-four card-design">
-                    <h4 class="card-title-two">
-                        Awesome Modern Design
-                        </h4>
-                        <p class="card-para">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
-                    </p>
-                </div>
-                <div class="card-five card-design">
-                    <h4 class="card-title-two">
-                        Super Easy to Edit
-                        </h4>
-                        <p class="card-para">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........
-                    </p>
-                </div>
-                
-            </article>
-            
-            
-            
-            
-            
-            
-            
-            
+            <div class="card-three card-design">
+              <h4 class="card-title-two">Drag & Drop Builder</h4>
+              <p class="card-para">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised...........
+              </p>
+            </div>
+            <div class="card-four card-design">
+              <h4 class="card-title-two">Awesome Modern Design</h4>
+              <p class="card-para">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised...........
+              </p>
+            </div>
+            <div class="card-five card-design">
+              <h4 class="card-title-two">Super Easy to Edit</h4>
+              <p class="card-para">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised...........
+              </p>
+            </div>
+          </article>
         </div>
         <div class="card-image">
-            
-            
-            <button class="btn-primary"><span class="btn-text-special">10 + Year</span><br> Experience</button> 
+          <button class="btn-primary">
+            <span class="btn-text-special">10 + Year</span><br />
+            Experience
+          </button>
         </div>
-        
-       
-    </section>
-    <!------------facts section ---------->
-    <section class="facts">
-        
+      </section>
+      <!------------facts section ---------->
+      <section class="facts">
         <div class="facts-info">
-            <h4 class="facts-title">Some Facts</h4>
-            <p class="facts-para">
-                There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration.
-            </p>
-            
-            
-            
-            
+          <h4 class="facts-title">Some Facts</h4>
+          <p class="facts-para">
+            There are many variations of passages of Lorem Ipsum available, but
+            <br />
+            the majority have suffered alteration.
+          </p>
         </div>
-        
-        
-    </section>
+      </section>
 
-    <!------------- project-status-section------ ------------------------------------------>
-    <section class="project-status">
-     <div class="project-info">
-        <div class=" content content-one">
-           
-            <div class="image-content" >
-            <img src="./images/001-medal.png" alt="" ">
-           </div>
-           <h4>54</h4>
-           <h5>Awards Winnings</h5>
-           
-        </div>
-
-        <div class=" content content-two">
+      <!------------- project-status-section------ ------------------------------------------>
+      <section class="project-status">
+        <div class="project-info">
+          <div class="content content-one">
             <div class="image-content">
-            <img src="./images/Group 28.png" alt="">
-           </div>
+              <img src="./images/001-medal.png" alt="" ">
+            </div>
+            <h4>54</h4>
+            <h5>Awards Winnings</h5>
+          </div>
+
+          <div class="content content-two">
+            <div class="image-content">
+              <img src="./images/Group 28.png" alt="" />
+            </div>
             <h4>54</h4>
             <h5>Project Finished</h5>
-        </div>
-        <div class="content content-three">
+          </div>
+          <div class="content content-three">
             <div class="image-content">
-            <img src="./images/Group 29.png" alt="">
-           </div>
+              <img src="./images/Group 29.png" alt="" />
+            </div>
             <h4>54</h4>
             <h5>Clients Worked</h5>
-        </div>
-        <div class="content content-four">
+          </div>
+          <div class="content content-four">
             <div class="image-content">
-            <img src="./images/Group 30.png" alt="">
+              <img src="./images/Group 30.png" alt="" />
             </div>
             <h4>54</h4>
             <h5>Email Send</h5>
+          </div>
         </div>
-     </div>
-        
-    </section>
+      </section>
 
+      <!---------------sponsor-section--------------------->
+      <section class="sponsor">
+        <div class="sponsor-content">
+          <h4 class="sponsor-content-title">Our Sponspors</h4>
+          <p class="sponsor-content-para">
+            There are many variations of passages of Lorem Ipsum available, but</p><br><p class="sponsor-content-para" id="second-para"> the majority have suffered alteration.</p>
+           
+          
+        </div>
+        <div class="sponsor-logo-content">
+            <div class="sponsor-image-content">
+                <img src="./images/spotify Logo.png" alt="">
+                </div>
+            <div class="sponsor-image-content">
+                <img src="./images/Amazon Logo.png" alt="">
+                </div>
+            <div class="sponsor-image-content">
+                <img src="./images/google Logo.png" alt="">
+                </div>
+            <div class="sponsor-image-content">
+                <img src="./images/Telerama Logo.png" alt="">
+                </div>
+            <div class="sponsor-image-content">
+                <img src="./images/figma Logo.png" alt="">
+                </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
